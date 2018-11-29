@@ -1,7 +1,5 @@
 package StepDefinition;		
 
-import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -36,11 +34,14 @@ public class Steps {
     }
 
     @Then("^First link should get open$")
-    public void first_link_should_get_open() throws Throwable {
+    public boolean first_link_should_get_open() throws Throwable {
     	Thread.sleep(5000);
     	String actual = driver.getCurrentUrl();
         String expected = "https://www.clickatell.com/faqs/answer/how-do-i-send-a-test-message/";
-    	assertTrue(actual.contains(expected));
-    	driver.close();
+    	if (actual.equals(expected))
+    	{
+    		return true;
+    	}
+		return false;
     }						  		
 }		

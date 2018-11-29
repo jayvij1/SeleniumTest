@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="47.900484">
-<testcase classname="Login functionality of Application" name="Verification of login" time="47.900484">
-<system-out><![CDATA[Given Open the Firefox and launch the application...........................passed
-When Enter the Username and click Next......................................passed
-When Enter the password and click Next......................................passed
-Then close browser..........................................................passed
-]]></system-out>
-</testcase>
-</testsuite>
