@@ -40,8 +40,11 @@ public class Steps {
         String expected = "https://www.clickatell.com/faqs/answer/how-do-i-send-a-test-message/";
     	if (actual.equals(expected))
     	{
-    		return true;
+    	System.out.println("Link is opened");
+    	Thread.sleep(3000);
+        driver.close();	
     	}
 		return false;
-    }						  		
+		
+    }		
 }		
